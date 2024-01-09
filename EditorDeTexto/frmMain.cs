@@ -3,11 +3,11 @@ using System.Windows.Forms;
 
 namespace EditorDeTexto
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
 
         StringReader leitura = null;
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -24,6 +24,7 @@ namespace EditorDeTexto
 
         private void Novo()
         {
+            TentativaDeSair();
             richTextBox1.Clear();
             richTextBox1.FindForm();
         }
@@ -38,7 +39,7 @@ namespace EditorDeTexto
                     StreamWriter cfb_stremWriter = new StreamWriter(arquivo);
                     cfb_stremWriter.Flush();
                     cfb_stremWriter.BaseStream.Seek(0, SeekOrigin.Begin);
-                    cfb_stremWriter.Write(this.richTextBox1);
+                    cfb_stremWriter.Write(this.richTextBox1.Text);
                     cfb_stremWriter.Flush();
                     cfb_stremWriter.Close();
                 }
@@ -50,8 +51,26 @@ namespace EditorDeTexto
             }
         }
 
+        private void TentativaDeSair()
+        {
+            if (richTextBox1.Text != "")
+            {
+                var reposta = DialogResult;
+                reposta = MessageBox.Show("Deseja salvar o arquivo atual?", "Salvar", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                if (reposta == DialogResult.Yes)
+                {
+                    Salvar();
+                }
+            }
+            
+        }
+
         private void Abrir()
         {
+            TentativaDeSair();
+
+
             this.openFileDialog1.Title = "Abrir Arquivo";
             openFileDialog1.InitialDirectory = "Downloads";
             openFileDialog1.Filter = "(*.TXT)|*.TXT"; // +"Todos os arquivos(*.*)|*.*";
@@ -312,6 +331,8 @@ namespace EditorDeTexto
                 Application.Exit();
             }
         }
+
+        
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Novo();

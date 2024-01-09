@@ -1,6 +1,6 @@
 ﻿namespace EditorDeTexto
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             menuStrip1 = new MenuStrip();
             arquivoToolStripMenuItem = new ToolStripMenuItem();
             novoToolStripMenuItem = new ToolStripMenuItem();
@@ -135,27 +135,27 @@
             // copiarToolStripMenuItem
             // 
             copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
-            copiarToolStripMenuItem.Size = new Size(180, 22);
+            copiarToolStripMenuItem.Size = new Size(118, 22);
             copiarToolStripMenuItem.Text = "Copiar";
             copiarToolStripMenuItem.Click += copiarToolStripMenuItem_Click;
             // 
             // colarToolStripMenuItem
             // 
             colarToolStripMenuItem.Name = "colarToolStripMenuItem";
-            colarToolStripMenuItem.Size = new Size(180, 22);
+            colarToolStripMenuItem.Size = new Size(118, 22);
             colarToolStripMenuItem.Text = "Colar";
             colarToolStripMenuItem.Click += colarToolStripMenuItem_Click;
             // 
             // desfazerToolStripMenuItem
             // 
             desfazerToolStripMenuItem.Name = "desfazerToolStripMenuItem";
-            desfazerToolStripMenuItem.Size = new Size(180, 22);
+            desfazerToolStripMenuItem.Size = new Size(118, 22);
             desfazerToolStripMenuItem.Text = "Desfazer";
             // 
             // refazerToolStripMenuItem
             // 
             refazerToolStripMenuItem.Name = "refazerToolStripMenuItem";
-            refazerToolStripMenuItem.Size = new Size(180, 22);
+            refazerToolStripMenuItem.Size = new Size(118, 22);
             refazerToolStripMenuItem.Text = "Refazer";
             // 
             // formatarToolStripMenuItem1
@@ -168,21 +168,21 @@
             // negritoToolStripMenuItem
             // 
             negritoToolStripMenuItem.Name = "negritoToolStripMenuItem";
-            negritoToolStripMenuItem.Size = new Size(180, 22);
+            negritoToolStripMenuItem.Size = new Size(143, 22);
             negritoToolStripMenuItem.Text = "Negrito";
             negritoToolStripMenuItem.Click += negritoToolStripMenuItem_Click;
             // 
             // itálicoToolStripMenuItem
             // 
             itálicoToolStripMenuItem.Name = "itálicoToolStripMenuItem";
-            itálicoToolStripMenuItem.Size = new Size(180, 22);
+            itálicoToolStripMenuItem.Size = new Size(143, 22);
             itálicoToolStripMenuItem.Text = "Itálico";
             itálicoToolStripMenuItem.Click += itálicoToolStripMenuItem_Click;
             // 
             // sublinhadoToolStripMenuItem
             // 
             sublinhadoToolStripMenuItem.Name = "sublinhadoToolStripMenuItem";
-            sublinhadoToolStripMenuItem.Size = new Size(180, 22);
+            sublinhadoToolStripMenuItem.Size = new Size(143, 22);
             sublinhadoToolStripMenuItem.Text = "Sublinhado";
             sublinhadoToolStripMenuItem.Click += sublinhadoToolStripMenuItem_Click;
             // 
@@ -190,7 +190,7 @@
             // 
             alinhamentoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { centralizarToolStripMenuItem, esquerdaToolStripMenuItem, direitaToolStripMenuItem });
             alinhamentoToolStripMenuItem.Name = "alinhamentoToolStripMenuItem";
-            alinhamentoToolStripMenuItem.Size = new Size(180, 22);
+            alinhamentoToolStripMenuItem.Size = new Size(143, 22);
             alinhamentoToolStripMenuItem.Text = "Alinhamento";
             // 
             // centralizarToolStripMenuItem
@@ -226,7 +226,7 @@
             // btnNovo
             // 
             btnNovo.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnNovo.Image = Properties.Resources.novo;
+            btnNovo.Image = BlocoDeNotas.Properties.Resources.novo;
             btnNovo.ImageTransparentColor = Color.Magenta;
             btnNovo.Name = "btnNovo";
             btnNovo.Size = new Size(23, 22);
@@ -236,7 +236,7 @@
             // btnAbrir
             // 
             btnAbrir.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnAbrir.Image = Properties.Resources.abrir;
+            btnAbrir.Image = BlocoDeNotas.Properties.Resources.abrir;
             btnAbrir.ImageTransparentColor = Color.Magenta;
             btnAbrir.Name = "btnAbrir";
             btnAbrir.Size = new Size(23, 22);
@@ -246,7 +246,7 @@
             // btnSalvar
             // 
             btnSalvar.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnSalvar.Image = Properties.Resources.save;
+            btnSalvar.Image = BlocoDeNotas.Properties.Resources.save;
             btnSalvar.ImageTransparentColor = Color.Magenta;
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(23, 22);
@@ -261,7 +261,7 @@
             // btnCopiar
             // 
             btnCopiar.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnCopiar.Image = Properties.Resources.copy;
+            btnCopiar.Image = BlocoDeNotas.Properties.Resources.copy;
             btnCopiar.ImageTransparentColor = Color.Magenta;
             btnCopiar.Name = "btnCopiar";
             btnCopiar.Size = new Size(23, 22);
@@ -272,7 +272,7 @@
             // btnColar
             // 
             btnColar.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnColar.Image = Properties.Resources.colar;
+            btnColar.Image = BlocoDeNotas.Properties.Resources.colar;
             btnColar.ImageTransparentColor = Color.Magenta;
             btnColar.Name = "btnColar";
             btnColar.Size = new Size(23, 22);
@@ -288,7 +288,7 @@
             // btnNegrito
             // 
             btnNegrito.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnNegrito.Image = Properties.Resources.bold;
+            btnNegrito.Image = BlocoDeNotas.Properties.Resources.bold;
             btnNegrito.ImageTransparentColor = Color.Magenta;
             btnNegrito.Name = "btnNegrito";
             btnNegrito.Size = new Size(23, 22);
@@ -298,7 +298,7 @@
             // btnItalico
             // 
             btnItalico.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnItalico.Image = Properties.Resources.italic;
+            btnItalico.Image = BlocoDeNotas.Properties.Resources.italic;
             btnItalico.ImageTransparentColor = Color.Magenta;
             btnItalico.Name = "btnItalico";
             btnItalico.Size = new Size(23, 22);
@@ -323,7 +323,7 @@
             // btnEsquerda
             // 
             btnEsquerda.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnEsquerda.Image = Properties.Resources.left;
+            btnEsquerda.Image = BlocoDeNotas.Properties.Resources.left;
             btnEsquerda.ImageTransparentColor = Color.Magenta;
             btnEsquerda.Name = "btnEsquerda";
             btnEsquerda.Size = new Size(23, 22);
@@ -333,7 +333,7 @@
             // btnCentro
             // 
             btnCentro.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnCentro.Image = Properties.Resources.centro;
+            btnCentro.Image = BlocoDeNotas.Properties.Resources.centro;
             btnCentro.ImageTransparentColor = Color.Magenta;
             btnCentro.Name = "btnCentro";
             btnCentro.Size = new Size(23, 22);
@@ -343,7 +343,7 @@
             // btnDireita
             // 
             btnDireita.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            btnDireita.Image = Properties.Resources.right;
+            btnDireita.Image = BlocoDeNotas.Properties.Resources.right;
             btnDireita.ImageTransparentColor = Color.Magenta;
             btnDireita.Name = "btnDireita";
             btnDireita.Size = new Size(23, 22);
@@ -361,10 +361,6 @@
             // printDialog1
             // 
             printDialog1.UseEXDialog = true;
-            // 
-            // printDocument1
-            // 
-          
             // 
             // printPreviewDialog1
             // 
@@ -387,7 +383,7 @@
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = "";
             // 
-            // Form1
+            // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -396,9 +392,9 @@
             Controls.Add(toolStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
+            Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "BLOCO DE NOTAS";
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
